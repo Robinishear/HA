@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="bn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HBC ACHAR SHOP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/public/logo.jpeg" type="image/x-icon">
+    <meta name="description" content="আচারের ডিলিশিয়াস কালেকশন - অর্ডার করুন ওয়াটসঅ্যাপে">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="public/logo.jpeg" alt="HBC ACHAR SHOP" class="logo">
+                <div>
+                    <div class="brand-name">HBC ACHAR SHOP</div>
+                    <div class="brand-sub">ঘরোয়া আচারের স্বাদ</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>ঘরোয়া স্বাদ, সরাসরি আপনার দরজায়</h2>
+            <p>পছন্দের আচার সিলেক্ট করে নিচের ফর্ম পূরণ করুন, তারপর WhatsApp-এ অর্ডার পাঠান।</p>
+        </section>
+
+        <section class="products">
+            <h3 class="section-title">প্যাকেজ নির্বাচন করুন</h3>
+
+            <form id="orderForm" class="checkout-shell">
+                <div class="card product-card-wrap">
+                    <div id="productList" class="products-grid single"></div>
+                </div>
+
+                <div class="checkout-layout">
+                    <div class="left-col">
+                        <div class="card billing-card">
+                            <h4>Billing details</h4>
+                            <div class="form-fields">
+                                <label>
+                                    আপনার নাম লিখুন
+                                    <input id="name" type="text" placeholder="আপনার নাম লিখুন" required>
+                                </label>
+                                <label>
+                                    আপনার ঠিকানা লিখুন
+                                    <input id="address" type="text" placeholder="আপনার ঠিকানা লিখুন" required>
+                                </label>
+                                <label>
+                                    আপনার মোবাইল নাম্বারটি লিখুন
+                                    <input id="phone" type="tel" placeholder="01XXXXXXXXX" pattern="^01[3-9][0-9]{8}$" inputmode="numeric" maxlength="11" title="Use 11-digit local number like 017XXXXXXXX (without 88)" required>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="right-col">
+                        <div class="card order-card">
+                            <h4>Your order</h4>
+                            <div class="order-head">
+                                <span>Product</span>
+                                <span>Subtotal</span>
+                            </div>
+                            <div class="order-item">
+                                <img id="previewImg" src="public/logo.jpeg" alt="preview">
+                                <div class="order-item-info">
+                                    <div id="previewName">-</div>
+                                    <small>× 1</small>
+                                </div>
+                                <div id="previewPrice" class="line-price">৳0.00</div>
+                            </div>
+                            <div class="order-row">
+                                <span>Subtotal</span>
+                                <span id="subtotalPrice">৳0.00</span>
+                            </div>
+                            <div class="order-row total">
+                                <span>Total</span>
+                                <span id="totalPrice">৳0.00</span>
+                            </div>
+
+                            <div class="pay-box">
+                                সম্পূর্ণ ক্যাশঅন হোম-ডেলিভারি
+                                <small>প্রোডাক্ট হাতে পেয়ে তারপর মূল্য পরিশোধ করুন।</small>
+                            </div>
+
+                            <div class="actions">
+                                <button id="confirmBtn" type="submit" class="btn">অর্ডার কনফার্ম করুন</button>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">© 2026 HBC ACHAR SHOP</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
